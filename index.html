@@ -425,7 +425,7 @@
                 <!-- <div class="videoThumbnail shadow rounded popupTrigger margin-bottom-3 ae-7" data-popup-id="89-3">
                   <img src="assets/img/image-89-1.jpg" class="wide" alt="Video Thumbnail" />
                 </div> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hcq4e9D4uL8"
+                <iframe width="560" height="315" src="" data-src="https://www.youtube.com/embed/Hcq4e9D4uL8"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
@@ -441,7 +441,7 @@
   </section>
 
   <!-- Popup Video -->
-  <div class="popup autoplay" data-popup-id="89-3">
+  <!-- <div class="popup autoplay" data-popup-id="89-3">
     <div class="close"><svg>
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
       </svg></div>
@@ -458,7 +458,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Slide 3 (#14) -->
@@ -615,11 +615,7 @@
             <i class="">Phone: <a href="tel:8598061490">+1 (859)
                 806-1490</a></i>
           </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+
           <div class="ae-1 margin-top-3">
             &copy; Copyright <strong><span>Gentech Solutions 2016-2021</span></strong>. All Rights Reserved
           </div>
@@ -634,6 +630,18 @@
 
   <!-- Loading Progress Bar -->
   <div class="progress-bar blue"></div>
+
+  <script>
+    function init() {
+      var vidDefer = document.getElementsByTagName('iframe');
+      for (var i = 0; i < vidDefer.length; i++) {
+        if (vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+        }
+      }
+    }
+    window.onload = init;
+  </script>
 
 </body>
 
