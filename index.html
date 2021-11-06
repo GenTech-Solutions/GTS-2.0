@@ -48,26 +48,28 @@
 </head>
 
 <body class="slides chain simplifiedMobile animated">
-<script>
-window.addEventListener('message', function (e) {
-    // Get the sent data
-    const data = e.data;
-    console.log(data);
-    if (data.message == "win"){document.getElementById("contactus").submit();}
-    // If you encode the message in JSON before sending them,
-    // then decode here
-    // const decoded = JSON.parse(data);
-});
-</script>
-<script>
-function get(name){
-   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
-      return decodeURIComponent(name[1]);
-}
-if (get("submitted") == 'ok'){
-  alert("Thank you for your submission. We will be with you shortly");
-}
-</script>
+  <script>
+    window.addEventListener('message', function (e) {
+      // Get the sent data
+      const data = e.data;
+      console.log(data);
+      if (data.message == "win") {
+        document.getElementById("contactus").submit();
+      }
+      // If you encode the message in JSON before sending them,
+      // then decode here
+      // const decoded = JSON.parse(data);
+    });
+  </script>
+  <script>
+    function get(name) {
+      if (name = (new RegExp('[?&]' + encodeURIComponent(name) + '=([^&]*)')).exec(location.search))
+        return decodeURIComponent(name[1]);
+    }
+    if (get("submitted") == 'ok') {
+      alert("Thank you for your submission. We will be with you shortly");
+    }
+  </script>
   <!-- Navigation -->
   <nav class="side pole">
     <div class="navigation">
@@ -178,7 +180,7 @@ if (get("submitted") == 'ok'){
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/server.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/background/server.jpg)"></div>
   </section>
 
 
@@ -188,7 +190,7 @@ if (get("submitted") == 'ok'){
       <div class="container">
         <div class="wrap">
           <div class="fix-12-12">
-            <img class="" src="assets/img/industry4.0.webp" style="height:400px; width:400px;" alt="">
+            <img class="" src="assets/img/industry4.0.png" style="height:400px; width:400px;" alt="">
             <div class="fix-7-12 left toRight">
               <h1 class="ae-1">Welcome to Industry 4.0</h1>
               <p class="ae-2"><span class="opacity-8">Industry 4.0 is the new industrial revolution in the 21st century,
@@ -215,7 +217,7 @@ if (get("submitted") == 'ok'){
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/circuit.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/background/circuit.jpg)"></div>
   </section>
 
   <!-- Slide 4 (#89) -->
@@ -273,7 +275,7 @@ if (get("submitted") == 'ok'){
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/img-09.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/background/img-09.jpg)"></div>
   </section>
 
   <!-- Popup Video -->
@@ -357,7 +359,7 @@ if (get("submitted") == 'ok'){
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/img-14.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/background/img-14.jpg)"></div>
   </section>
 
 
@@ -418,7 +420,7 @@ if (get("submitted") == 'ok'){
         </div>
       </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/code5avif.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/code4.jpg)"></div>
   </section>
 
   <!-- Slide 6 (#95) -->
@@ -428,25 +430,25 @@ if (get("submitted") == 'ok'){
         <div class="wrap">
 
           <!--<div class="fix-6-12">-->
-            <h1 class="huge ae-1 margin-bottom-2">Contact Us</h1>
-            <!-- <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p> -->
-            <form id="contactus" action="contactus.php" class="slides-form margin-bottom-3" style="width: 100%;">
+          <h1 class="huge ae-1 margin-bottom-2">Contact Us</h1>
+          <!-- <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p> -->
+          <form id="contactus" action="contactus.php" class="slides-form margin-bottom-3" style="width: 100%;">
 
-              <input type="text" class="ae-3" name="name" placeholder="Name" />
+            <input type="text" class="ae-3" name="name" placeholder="Name" />
 
-              <input type="email" class="ae-3" name="email" placeholder="E-mail address" />
+            <input type="email" class="ae-3" name="email" placeholder="E-mail address" />
 
-              <input type="text" class="ae-3" name="phone" placeholder="Contact phone" />
+            <input type="text" class="ae-3" name="phone" placeholder="Contact phone" />
 
-              <textarea style="max-width: 900px;" class="ae-3" name="msg" placeholder="Message"></textarea>
-              <br>
-              <script src="doomcaptcha-main/script.js"></script>
+            <textarea style="max-width: 900px;" class="ae-3" name="msg" placeholder="Message"></textarea>
+            <br>
+            <script src="doomcaptcha-main/script.js"></script>
 
-              <!--<button type="submit" class="button blue gradient ae-4" name="submit">Submit</button>-->
-            </form>
+            <!--<button type="submit" class="button blue gradient ae-4" name="submit">Submit</button>-->
+          </form>
           <!--</div>-->
           <div class="huge ae-1 margin-bottom-2">
-            <i class=""></i>Email: <a href="mailto:contact@example.com">contact@gentechsolutions.com</a>
+            <i class=""></i>Email: <a href="mailto:contact@gentechsolutions.com">contact@gentechsolutions.com</a>
             <br>
             <i class="">Phone: <a href="tel:8598061490">+1 (859)
                 806-1490</a></i>
@@ -460,7 +462,7 @@ if (get("submitted") == 'ok'){
       </div>
     </div>
 
-    <div class="background" style="background-image:url(assets/img/img-85.avif)"></div>
+    <div class="background" style="background-image:url(assets/img/background/img-85.jpg)"></div>
 
   </section>
 
